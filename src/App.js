@@ -6,26 +6,36 @@ class Selector extends Component {
   constructor(){
     super();
     this.state = {
-      
+      selectedShape : 'shape?', //initalized with a value and data type, which is string, for selectedShape
 
 
     };
   }
 
+//below allows for shape data to change...this is a method
+  selectShape = (shapeName) => {
+    this.setState({
+      selectedShape: shapeName,
+    })  
+  }
+//in the Shape in jsx below, the selectShape attribute is calling the above selectShape method
+//this allows for this.state.selectedShape in Selected: div to change on click
+
 //state and props are objects with key/value pairs
 
   render(){
-    //shape = "shape" creating shape property with a value. This becomes a passing props in shape component on Shape.js
+    //shape = "shape/square/circle/triangle" creating shape property with a value. This becomes a passing props in shape component on Shape.js
+    
     return (
       <div className = "container">
         <div className ="navbar">
-        <div>Selected: <span>shape</span></div>
+        <div>Selected: <span>{this.state.selectedShape}</span></div>
         </div>
         
         <div className ="shape-list">
-          <Shape shape="square" /> 
-          <Shape shape="circle" />
-          <Shape shape="triangle" />
+          <Shape shape="square" selectShape = {this.selectShape}/> 
+          <Shape shape="circle" selectShape = {this.selectShape}/>
+          <Shape shape="triangle" selectShape = {this.selectShape}/>
         </div>
       </div>
     );
