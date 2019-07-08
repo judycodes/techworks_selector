@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Shape from './Shape';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//stateful/class component
+class Selector extends Component {
+  constructor(){
+    super();
+    this.state = {
+      
+
+
+    };
+  }
+
+//state and props are objects with key/value pairs
+
+  render(){
+    //shape = "shape" creating shape property with a value. This becomes a passing props in shape component on Shape.js
+    return (
+      <div className = "container">
+        <div className ="navbar">
+        <div>Selected: <span>shape</span></div>
+        </div>
+        
+        <div className ="shape-list">
+          <Shape shape="square" /> 
+          <Shape shape="circle" />
+          <Shape shape="triangle" />
+        </div>
+      </div>
+    );
+  }
+
 }
-
-export default App;
+export default Selector;
