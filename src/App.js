@@ -19,6 +19,7 @@ class Selector extends Component {
     };
   }
 
+//=======[EVENTS]============  
 //below allows for shape data to change due to value passed as parameter...this is a method
   handleSelectShape = (shapeName) => {
     this.setState({
@@ -72,6 +73,7 @@ class Selector extends Component {
     this.setState({squareCount: this.state.squareCount + 1})
   }
 
+  //=======[RENDER]============
   render(){
     //shape = "shape/square/circle/triangle/etc" is a shape property/key with a value. This becomes props in Shape.js/functional component as a parameter to be passed through function
     
