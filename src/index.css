@@ -4,6 +4,7 @@ body {
   width: 100vw;
   margin: 0;
   background-color:rgba(0,0,0,0.9);
+  overflow:hidden;
 }
 
 #root {
@@ -16,12 +17,13 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  padding:20px;
+  padding:10px;
   margin: 0px 120px;
   
 }
 
 .navbar {
+  margin-top: 15px;
   color: #fff;
   background-color: #DF1E37;
   display: flex;
@@ -32,19 +34,20 @@ body {
 }
 
 .hello {
-  font-size: 4.5em;
+  font-size: 3em;
   font-variant: small-caps;
   font-family: 'Ubuntu', sans-serif;
-  margin:20px 0px 5px;
+  margin:10px 0px 5px;
   text-shadow: 1px 1px #2E120B;
 }
 
 .text {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   padding: 5px;
   font-variant: small-caps;
   text-shadow: 1px 1px #2E120B;
+  color: #fff;
 }
 
 .row {
@@ -165,6 +168,24 @@ body {
   -ms-transform: rotate(-70deg);
   -o-transform: rotate(-70deg);
 }
+
+.footer {
+  display:flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.erase {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding:5px 10px;
+}
+
+.erase:hover {
+  background-color: #fc2e5a;
+}
+
 
 /* ==[UNUSED CSS]==
 .triangle_down {
