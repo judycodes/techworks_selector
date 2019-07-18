@@ -61,7 +61,7 @@ class Selector extends Component {
       trapeziumCount: 0,
       starCount: 0,
       ovalCount: 0
-    }, alert('Memory Erased! Meet These Shapes Again!'))
+    }, alert('Memory Wiped! Meet These Shapes Again!'))
   }
 
 //in the Shape component in jsx below, the selectShape attribute is calling the above handleSelectShape method to change local state data
@@ -103,7 +103,7 @@ class Selector extends Component {
         <div className="footer">
           <h1 className="text"> You have met {this.state.squareCount} square(s), {this.state.circleCount} circle(s), {this.state.triangleCount} triangle(s), {this.state.trapeziumCount} trapezium(s), {this.state.starCount} star(s), and {this.state.ovalCount} oval(s) today!</h1>
 
-          <h1 class="text erase" onClick = {this.handleReset}>Forget Who You Met</h1> 
+          <h1 class="text erase" onClick = {this.handleReset}>Neuralyzer</h1> 
         </div>
 
       </div>
