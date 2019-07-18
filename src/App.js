@@ -101,7 +101,7 @@ class Selector extends Component {
         </div>
 
         <div className="footer">
-          <h1 className="text"> You have met {this.state.squareCount} square(s), {this.state.circleCount} circle(s), {this.state.triangleCount} triangle(s), {this.state.trapeziumCount} trapezium(s), {this.state.starCount} star(s), and {this.state.ovalCount} oval(s) today!</h1>
+          <h1 className="text"> You have met {this.state.squareCount} squares, {this.state.circleCount} circles, {this.state.triangleCount} triangles, {this.state.trapeziumCount} trapeziums, {this.state.starCount} stars, and {this.state.ovalCount} ovals today!</h1>
 
           <h1 class="text erase" onClick = {this.handleReset}>Neuralyzer</h1> 
         </div>
