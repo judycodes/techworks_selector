@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/techworks_selector/static/css/main.ae3e986c.chunk.css",
+    "main.js": "/techworks_selector/static/js/main.0d58dee8.chunk.js",
+    "main.js.map": "/techworks_selector/static/js/main.0d58dee8.chunk.js.map",
+    "runtime~main.js": "/techworks_selector/static/js/runtime~main.5e9c4bea.js",
+    "runtime~main.js.map": "/techworks_selector/static/js/runtime~main.5e9c4bea.js.map",
+    "static/js/2.65aa1cca.chunk.js": "/techworks_selector/static/js/2.65aa1cca.chunk.js",
+    "static/js/2.65aa1cca.chunk.js.map": "/techworks_selector/static/js/2.65aa1cca.chunk.js.map",
+    "index.html": "/techworks_selector/index.html",
+    "precache-manifest.b0401db931cff31b6767e0e5f6a08bd3.js": "/techworks_selector/precache-manifest.b0401db931cff31b6767e0e5f6a08bd3.js",
+    "service-worker.js": "/techworks_selector/service-worker.js",
+    "static/css/main.ae3e986c.chunk.css.map": "/techworks_selector/static/css/main.ae3e986c.chunk.css.map"
+  }
+}
